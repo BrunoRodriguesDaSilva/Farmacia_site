@@ -1,0 +1,419 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+/* Header styles */
+#Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    padding: 10px 50px;
+    position: fixed;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 1px -15px 100px 10px black;
+}
+
+.img_icon {
+    height: 100%;
+    width: 10%;
+}
+
+.Titulo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    padding-left: 20%;
+}
+
+#Barra_de_sessoes {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 450px;
+}
+
+#Barra_de_sessoes li:hover {
+    font-size: 30px;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid rgb(57, 57, 170);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+/* Section titles */
+.titulo_sessao_h1 {
+    padding: 60px 0 30px;
+    width: 600px;
+    text-align: left;
+}
+
+.titulo_sessao_p {
+    padding: 10px 0 80px;
+    margin: auto;
+    width: 450px;
+}
+
+/* Home section */
+#Home {
+    width: 100%;
+    padding: 0 0 10%;
+    display: flex;
+    background: url("Images/wallpaper.jpg") no-repeat center center/cover;
+}
+
+.Box {
+    margin: auto;
+    width: 70%;
+    margin-top: 200px;
+    padding: 5% 4%;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.096);
+    border: solid 1px black;
+}
+
+.Box h1 {
+    font-size: 24px;
+    padding-bottom: 4%;
+}
+
+/* Content sections */
+#Corpo {
+    width: 100%;
+    height: 2100px;
+}
+
+.tipos, .sintomas, .causas {
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tipos {
+    padding: 0 0 150px;
+    background-image: url("Images/wallpaper_tipos.jpg");
+}
+
+.sintomas {
+    padding: 50px 0;
+    background-image: url("Images/wallpaper_sintomas.jpg");
+}
+
+.causas {
+    padding: 0 0 150px 0;
+    background-image: url("Images/wallpaper_causas.jpg");
+}
+
+.tipos main, .sintomas main, .causas main {
+    width: 50%;
+}
+
+.tipos aside, .sintomas aside, .causas aside {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sintomas .titulo_sessao_h1, .sintomas .titulo_sessao_p {
+    text-align: left;
+    width: 100%;
+}
+
+.sintomas aside {
+    width: 80%;
+    padding: 0 50px;
+}
+
+.sintomas main {
+    width: 20%;
+    padding: 0 50px;
+}
+
+.box_tipo {
+    width: 90%;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: rgba(175, 45, 136, 0.103);
+    text-align: left;
+}
+
+.box_tipo h1 {
+    margin-bottom: 20px;
+}
+
+/* Specific styles for "sintomas" section */
+.sintomas .box_tipo {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: rgb(209, 208, 208);
+}
+
+/* Specific styles for "causas" section */
+.causas .box_tipo {
+    background-color: rgba(184, 110, 13, 0.76);
+}
+
+.causas .box_tipo p {
+    font-size: 16px;
+}
+
+/* Icones section */
+#Icones {
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 419px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    background: url("Images/wallpaper_icones.jpg") no-repeat center center/cover;
+}
+
+.Box_icones {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.822);
+}
+
+.Box_icones img {
+    width: 100%;
+}
+
+.Box_icones .descricao {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+
+.Box_icones .descricao h1 {
+    padding-bottom: 20px;
+}
+
+/* Quiz section */
+#Quiz {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background: url("Images/wallpaper_quiz.jpg") no-repeat center center/cover;
+}
+
+.questao {
+    padding-bottom: 70px;
+}
+
+.opcao {
+    margin: 40px auto;
+    padding: 20px;
+    width: 20%;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: lightblue;
+}
+
+.quiz-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 56px;
+}
+
+.quiz-container .timer {
+    font-weight: bold;
+    text-align: right;
+}
+
+.quiz-container h2.question {
+    width: 50%;
+    margin: 10px auto 120px;
+    padding: 16px;
+    font-size: 20px;
+    background: #d0ecff;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.quiz-container .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.quiz-container .option {
+    width: 50%;
+    margin: auto;
+    padding: 24px 32px;
+    font-size: 18px;
+    background-color: #1d3557;
+    color: #fff;
+    border: none;
+}
+
+.quiz-container button {
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.option.correct {
+    background: #51e351;
+    color: #222;
+}
+
+.option.incorrect {
+    background: #e63946;
+}
+
+.quiz-container .next-btn,
+.quiz-result .retake-btn {
+    margin: auto;
+    padding: 12px 32px;
+    font-size: 20px;
+    background: #222;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.quiz-result {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.quiz-result .question-container {
+    padding: 12px;
+    background-color: #9af39a;
+    border: 1px solid #2c2b2b5e;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quiz-result .question-container.incorrect {
+    background: #e63947e8;
+    color: #fff;
+}
+
+.question-number {
+    padding: 8px;
+    margin-right: 16px;
+    font-size: 16px;
+    background: #1d3557;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 760px) {
+
+    #Header {
+        height: 7%;
+        padding: 10px 20px;
+    }
+    
+    .img_icon {
+        width: 15%;
+    }
+    
+    .Titulo {
+        font-size: 12px;
+        padding: 0 10%;
+    }
+
+    #Barra_de_sessoes li:hover {
+        font-size: 30px;
+        border-bottom: 3px solid rgb(57, 57, 170);
+    }
+    
+    a {
+        font-size: 14px;
+    }
+
+    .tipos main,
+    .sintomas main {
+        width: 1%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .tipos aside,
+    .causas aside {
+        width: 80%;
+        margin: auto;
+    }
+
+    .titulo_sessao_h1,
+    .titulo_sessao_p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .box_tipo {
+        width: 100%;
+    }
+
+    .sintomas {
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .sintomas aside {
+        padding: 0 auto;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .sintomas .box_tipo {
+        height: 50%;
+        width: 100%;
+    }
+
+    .causas .titulo {
+        width: 100%;
+    }
+
+    .causas main {
+        width: 10%;
+    }
+
+    #Icones {
+        display: block;
+    }
+
+    #Icones .Box_icones {
+        margin: 50px auto;
+    }
+}
