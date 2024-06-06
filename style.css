@@ -421,9 +421,13 @@ a {
     }
 
     .sintomas {
-        height: auto;
         width: 100%;
         padding: 0;
+        display: block;
+    }
+
+    .sintomas main {
+        width: 100%;
     }
 
     .sintomas aside {
@@ -442,6 +446,24 @@ a {
         width: 100%;;
     }
 
+
+    .causas {
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .causas main {
+        height: 20%;
+        width: 100%;
+        display: block;
+    }
+
+    .causas aside {
+        height: 20%;
+        width: 100%;
+        display: block;
+    }
     .causas .titulo {
         width: 100%;
     }
@@ -456,5 +478,21 @@ a {
 
     #Icones .Box_icones {
         margin: 50px auto;
+    }
+
+    .quiz-container {
+        padding: 15px;
+    }
+
+    #Quiz .quiz-container .question h2{
+        margin: 0;
+        padding: 5px
+    }
+    
+    .quiz-container .option{
+        width: auto;
+        margin: 0;
+        font-size: 12px;
+        padding: 30px 5px; 
     }
 }
