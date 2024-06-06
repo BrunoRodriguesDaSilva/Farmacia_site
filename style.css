@@ -358,6 +358,31 @@ a {
     border-radius: 8px;
 }
 
+#farmacia {
+    display: none;
+}
+
+#Integrantes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 70px;
+    font-size: 10px;
+    list-style: none;
+    background-color: #222;
+    color: whitesmoke;
+}
+
+#Integrantes li {
+    padding: 20px;
+    display: flex;
+}
+
+#Integrantes img {
+    height: 50px;
+    width: 50px;
+}
+
+
 /* Responsive styles */
 @media screen and (max-width: 760px) {
 
@@ -367,17 +392,21 @@ a {
     }
     
     .img_icon {
-        width: 15%;
+        width: 10%;
     }
     
     .Titulo {
         font-size: 12px;
-        padding: 0 10%;
+        padding: 0 3%;
     }
-
+    
     #Barra_de_sessoes li:hover {
         font-size: 30px;
         border-bottom: 3px solid rgb(57, 57, 170);
+    }
+    
+    #Barra_de_sessoes li {
+        padding: 0 4px;
     }
     
     a {
@@ -386,7 +415,7 @@ a {
 
     #Home {
         margin: 0;
-        padding: 0;
+        padding: 50px 0;
         width: 100%;
     }
 
@@ -408,6 +437,10 @@ a {
         margin: 0;
     }
 
+    .tipos .titulo_sessao_h1, .sintomas .titulo_sessao_h1 {
+        font-size: 24px;
+    }
+
     .titulo_sessao_h1,
     .titulo_sessao_p {
         width: 100%;
@@ -421,6 +454,7 @@ a {
     }
 
     .sintomas {
+        height: 100%;
         width: 100%;
         padding: 0;
         display: block;
@@ -477,6 +511,7 @@ a {
     }
 
     #Icones .Box_icones {
+        width: 80%;
         margin: 50px auto;
     }
 
@@ -488,11 +523,52 @@ a {
         margin: 0;
         padding: 5px
     }
+
+    #Quiz .box_quiz .quiz-container .question {
+        width: 90%;
+    }
     
     .quiz-container .option{
         width: auto;
         margin: 0;
         font-size: 12px;
         padding: 30px 5px; 
+    }
+
+    #farmacia {
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: url("Images/wallpaper_causas.jpg") no-repeat center center/cover;
+    }
+    
+    #farmacia h1 {
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    
+    #farmacia main {
+        padding: 20px;
+        background-color: rgba(184, 110, 13, 0.76);
+        margin: 40px 0;
+    }
+
+    #farmacia aside {
+        padding: 20px;
+        background-color: rgba(184, 110, 13, 0.76);
+    }
+
+    #Integrantes {
+        display: block;
+        padding: 20px;
+        font-size: 14px;
+        list-style: none;
+        background-color: #222;
+        color: whitesmoke;
+    }
+
+    #Integrantes li {
+        padding: 20px 0;
     }
 }
