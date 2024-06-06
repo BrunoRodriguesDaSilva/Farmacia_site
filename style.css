@@ -384,27 +384,40 @@ a {
         font-size: 14px;
     }
 
+    #Home {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #Home .Box{
+        width: 100%;
+        margin: 60px 10px;
+    }
+
     .tipos main,
     .sintomas main {
-        width: 1%;
+        width: auto;
         padding: 0;
         text-align: center;
     }
 
     .tipos aside,
     .causas aside {
-        width: 80%;
-        margin: auto;
+        width: 100%;
+        margin: 0;
     }
 
     .titulo_sessao_h1,
     .titulo_sessao_p {
         width: 100%;
         font-size: 14px;
+        text-align: center;
     }
 
     .box_tipo {
         width: 100%;
+        margin: 0;
     }
 
     .sintomas {
@@ -414,15 +427,19 @@ a {
     }
 
     .sintomas aside {
-        padding: 0 auto;
+        padding: 0;
         margin: auto;
         width: 100%;
 
     }
 
+    .sintomas .titulo .titulo_sessao_h1{
+        text-align: center;
+    }
+
     .sintomas .box_tipo {
         height: 50%;
-        width: 100%;
+        width: 100%;;
     }
 
     .causas .titulo {
